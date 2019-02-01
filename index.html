@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+   <style>
+       html{
+           overflow: hidden;
+       }
+       p{
+           display: inline-block;
+           width: 100%;
+           margin:35vh 25vw;
+           font-size: 5.6vmax;
+           text-shadow: -4px -2px 7px rgba(150, 150, 150, 1);
+           letter-spacing: 2.5vmax;
+           text-transform: uppercase;
+           color:#fff;
+           font-weight: bold;
+       }
+       span{
+        display: inline-block;
+        opacity: 0.2;
+        animation: loading 1.2s linear infinite;
+       }
+
+       @keyframes loading {
+           0%{
+            transform: scale(0.7);
+            opacity: 0.2;
+           }
+           25%{
+            transform: scale(0.8);
+            opacity: .5;
+           }
+
+           50%{
+            transform: scale(0.9);
+            opacity: .5;
+           }
+
+           100%{
+            transform: scale(.7);
+            opacity: 0.2;
+           }
+       }
+       
+
+    </style>    
+</head>
+
+<body>
+    <div class="container">
+        <div id="loader"></div>
+    </div>
+    <script src="animate.js"></script>
+</body>
+</html>
