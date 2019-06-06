@@ -9,6 +9,4 @@ function insertSpan(){
         .css('animationDelay',`0.${i}s`)
         .appendTo('p');
     }
-}
-
-insertSpan();
+}();
